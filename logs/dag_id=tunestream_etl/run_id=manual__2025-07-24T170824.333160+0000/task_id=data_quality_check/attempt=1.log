@@ -1,0 +1,34 @@
+[2025-07-24T17:11:48.188+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-24T17:11:48.280+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tunestream_etl.data_quality_check manual__2025-07-24T17:08:24.333160+00:00 [queued]>
+[2025-07-24T17:11:48.301+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tunestream_etl.data_quality_check manual__2025-07-24T17:08:24.333160+00:00 [queued]>
+[2025-07-24T17:11:48.301+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-07-24T17:11:48.335+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): data_quality_check> on 2025-07-24 17:08:24.333160+00:00
+[2025-07-24T17:11:48.348+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tunestream_etl', 'data_quality_check', 'manual__2025-07-24T17:08:24.333160+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/tunestream_etl_dag.py', '--cfg-path', '/tmp/tmp5ojruj1c']
+[2025-07-24T17:11:48.359+0000] {standard_task_runner.py:91} INFO - Job 100: Subtask data_quality_check
+[2025-07-24T17:11:48.362+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=9239) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-24T17:11:48.364+0000] {standard_task_runner.py:64} INFO - Started process 9247 to run task
+[2025-07-24T17:11:48.402+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-24T17:11:48.445+0000] {task_command.py:426} INFO - Running <TaskInstance: tunestream_etl.data_quality_check manual__2025-07-24T17:08:24.333160+00:00 [running]> on host da6b6b72382b
+[2025-07-24T17:11:48.604+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='NamTH91' AIRFLOW_CTX_DAG_ID='tunestream_etl' AIRFLOW_CTX_TASK_ID='data_quality_check' AIRFLOW_CTX_EXECUTION_DATE='2025-07-24T17:08:24.333160+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-24T17:08:24.333160+00:00'
+[2025-07-24T17:11:48.606+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-24T17:11:48.733+0000] {logging_mixin.py:188} INFO - bảng songplays rỗng
+[2025-07-24T17:11:48.736+0000] {logging_mixin.py:188} INFO - bảng songplays ok 
+[2025-07-24T17:11:48.737+0000] {logging_mixin.py:188} INFO - bảng songplays ko có null 
+[2025-07-24T17:11:48.739+0000] {logging_mixin.py:188} INFO - bảng users rỗng
+[2025-07-24T17:11:48.740+0000] {logging_mixin.py:188} INFO - bảng users ok 
+[2025-07-24T17:11:48.741+0000] {logging_mixin.py:188} INFO - bảng users ko có null 
+[2025-07-24T17:11:48.743+0000] {logging_mixin.py:188} INFO - bảng songs rỗng
+[2025-07-24T17:11:48.745+0000] {logging_mixin.py:188} INFO - bảng songs ok 
+[2025-07-24T17:11:48.746+0000] {logging_mixin.py:188} INFO - bảng songs ko có null 
+[2025-07-24T17:11:48.747+0000] {logging_mixin.py:188} INFO - bảng artists rỗng
+[2025-07-24T17:11:48.748+0000] {logging_mixin.py:188} INFO - bảng artists ok 
+[2025-07-24T17:11:48.750+0000] {logging_mixin.py:188} INFO - bảng artists ko có null 
+[2025-07-24T17:11:48.751+0000] {logging_mixin.py:188} INFO - bảng time rỗng
+[2025-07-24T17:11:48.753+0000] {logging_mixin.py:188} INFO - bảng time ok 
+[2025-07-24T17:11:48.754+0000] {logging_mixin.py:188} INFO - bảng time ko có null 
+[2025-07-24T17:11:48.754+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-24T17:11:48.755+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-24T17:11:48.765+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=tunestream_etl, task_id=data_quality_check, run_id=manual__2025-07-24T17:08:24.333160+00:00, execution_date=20250724T170824, start_date=20250724T171148, end_date=20250724T171148
+[2025-07-24T17:11:48.786+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-24T17:11:48.805+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-24T17:11:48.809+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,23 @@
+[2025-07-21T03:51:42.861+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-21T03:51:42.935+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: conditional_prime_dag.T1 manual__2025-07-21T10:51:37+07:00 [queued]>
+[2025-07-21T03:51:42.952+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: conditional_prime_dag.T1 manual__2025-07-21T10:51:37+07:00 [queued]>
+[2025-07-21T03:51:42.953+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-21T03:51:42.981+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): T1> on 2025-07-21 03:51:37+00:00
+[2025-07-21T03:51:42.987+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'conditional_prime_dag', 'T1', 'manual__2025-07-21T10:51:37+07:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/task1.py', '--cfg-path', '/tmp/tmpxuvvndco']
+[2025-07-21T03:51:42.988+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=413) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-21T03:51:42.989+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask T1
+[2025-07-21T03:51:42.989+0000] {standard_task_runner.py:64} INFO - Started process 419 to run task
+[2025-07-21T03:51:43.008+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-21T03:51:43.054+0000] {task_command.py:426} INFO - Running <TaskInstance: conditional_prime_dag.T1 manual__2025-07-21T10:51:37+07:00 [running]> on host 7b3eb14378b0
+[2025-07-21T03:51:43.212+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='conditional_prime_dag' AIRFLOW_CTX_TASK_ID='T1' AIRFLOW_CTX_EXECUTION_DATE='2025-07-21T03:51:37+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-21T10:51:37+07:00'
+[2025-07-21T03:51:43.218+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-21T03:51:43.308+0000] {baseoperator.py:400} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2025-07-21T03:51:43.310+0000] {python.py:237} INFO - Done. Returned value was: T2
+[2025-07-21T03:51:43.311+0000] {branch.py:36} INFO - Branch into T2
+[2025-07-21T03:51:43.311+0000] {skipmixin.py:178} INFO - Following branch T2
+[2025-07-21T03:51:43.359+0000] {skipmixin.py:246} INFO - Skipping tasks [('T3', -1)]
+[2025-07-21T03:51:43.395+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-21T03:51:43.424+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=conditional_prime_dag, task_id=T1, run_id=manual__2025-07-21T10:51:37+07:00, execution_date=20250721T035137, start_date=20250721T035142, end_date=20250721T035143
+[2025-07-21T03:51:43.495+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-07-21T03:51:43.552+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-21T03:51:43.557+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
