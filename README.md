@@ -1,4 +1,4 @@
-<img width="1877" height="632" alt="image" src="https://github.com/user-attachments/assets/a488f02a-eb31-4a67-aa8b-04d67b4186c0" />
+
 # Airflow Final Project: Data Warehouse ETL Workflow
 
 ## 1. Prerequisites
